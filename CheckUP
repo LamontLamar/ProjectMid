@@ -1,0 +1,26 @@
+var r = 0;
+
+function setup() {
+  createCanvas(400, 400);
+  angleMode(DEGREES);
+}
+
+function draw() {
+  background(0);
+  
+  ellipse(200, 200, 350);
+	fill(0, 300, 100);
+  
+  ellipse(200, 200, 10);
+	fill(255, 105, 180);
+	
+	push();
+  translate(200, 200);
+  rotate(r);
+  stroke(0, 300, 100);
+  line(0, 0, 0, 175);
+  r = r + 1;
+  pop();
+
+
+}
